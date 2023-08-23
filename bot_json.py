@@ -9,7 +9,6 @@ json_birthday = "birthdays.json"
 
 if not os.path.isfile(json_name) and not os.path.isfile(json_birthday): #створили файл json в якому будемо зберігати дані(імена, номери)
     json_file = open(json_name, 'w')
-    json_birthday = open(json_birthday, 'w')
     dic = {'Name': 'Phone number'}
     json.dump(dic,json_file)
     json_file.close()
