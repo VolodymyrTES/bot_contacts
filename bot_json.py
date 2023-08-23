@@ -226,7 +226,7 @@ def main():
     while True:
         command = input("Enter a command: ")
         if command.lower() == "hello":
-            print("How can I help you?\nMy commands:\n\tadd... - saves the new contact in memory;\n\tchange... - saves the new phone number of the existing contact;\n\tdelete... - delete the contact by phone number;\n\tphone... - displays the phone number for the specified contact;\n\tshow all - shows all saved contacts with phone numbers;\n\tbirthday... - shows days left till contact's birthday;\n\tnew birthday... - adds the day of birth ex.(new birthday Vova 1991-02-18);\n\tshow page...- shows a page of contacts ex.(show page 2);\n\tgood bye - close the program.")
+            print("How can I help you?\nMy commands:\n\tadd... - saves the new contact in memory;\n\tfind... - look for all contacts by name and phone number;\n\tchange... - saves the new phone number of the existing contact;\n\tdelete... - delete the contact by phone number;\n\tphone... - displays the phone number for the specified contact;\n\tshow all - shows all saved contacts with phone numbers;\n\tbirthday... - shows days left till contact's birthday;\n\tnew birthday... - adds the day of birth ex.(new birthday Vova 1991-02-18);\n\tshow page...- shows a page of contacts ex.(show page 2);\n\tgood bye - close the program.")
 
         elif command.lower().startswith("add "):
             name, phone = command[4:].split()
