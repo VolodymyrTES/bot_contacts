@@ -7,7 +7,6 @@ import json
 json_name = "myadressbook.json"
 json_birthday = "birthdays.json"
 
-
 if not os.path.isfile(json_name) and not os.path.isfile(json_birthday): #створили файл json в якому будемо зберігати дані(імена, номери)
     json_file = open(json_name, 'w')
     json_birthday = open(json_birthday, 'w')
@@ -28,7 +27,6 @@ def save_address_book(address_book, file_path):
 
 save_address_book(dic_birthday, json_birthday) 
     
-
 def input_error(func):
     def wrapper(*args, **kwargs):
         try:
@@ -121,7 +119,6 @@ class AddressBook(UserDict):
     
     def add_record(self, record):
         self.data[record.name.value] = record
-
         
     @input_error 
     def all(self, part):
